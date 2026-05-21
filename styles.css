@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rule-num {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1;
@@ -548,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -1209,5 +1209,36 @@ h1, h2, h3, h4, h5, h6 {
   .list-item-card .neo-btn {
     width: 100%;
     text-align: center;
+  }
+
+  /* Footer & Title Stacking overrides on Mobile */
+  .footer-grid.flex-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-bottom {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+  }
+
+  .section-title-block.flex-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
   }
 }
