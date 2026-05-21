@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide View & Document Details | onedayez.</title>
+  <meta name="description" content="Detail slide buku interaktif dari onedayez studio. Dirancang secara estetis dan screenshotable untuk materi sosial mediamu.">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container flex-between">
+      <a href="index.html" class="logo">onedayez<span class="dot">.</span></a>
+      <nav class="nav-menu">
+        <a href="about.html" class="nav-link">Tentang ODZ</a>
+        <a href="index.html#about" class="nav-link">Filosofi</a>
+        <a href="index.html#services" class="nav-link">Layanan</a>
+        <a href="index.html#ceo" class="nav-link">The Captain</a>
+        <a href="https://github.com/onedayezz" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub Org</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://instagram.com/onedayezz" target="_blank" rel="noopener noreferrer" class="neo-btn">DM Kita di IG</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Slide Hero Header -->
+    <section class="detail-hero">
+      <div class="container">
+        <div class="neo-badge neo-badge-outline" id="detail-category-badge">RESOURCE DETAIL</div>
+        <h1 class="hero-title" style="margin-top: 1rem; font-size: 2rem;" id="detail-main-title">SLIDE BUKU SCREENSHOTABLE</h1>
+        <p class="hero-desc" style="max-width: 600px; margin: 0.5rem auto 0 auto; font-size: 1rem;">
+          Gunakan tombol di bawah slide untuk mengganti halaman. Screenshot slide square ini untuk materi feeds Instagram kamu! 📸
+        </p>
+      </div>
+    </section>
+
+    <!-- Slide Book Post Viewport Section -->
+    <section class="detail-section">
+      <div class="container flex-center">
+        
+        <div class="book-container">
+          <!-- The strictly square slide container (perfect 1080x1080 screenshot area) -->
+          <div class="book-viewport" id="screenshot-area">
+            
+            <!-- Book Slide Header -->
+            <div class="book-header">
+              <span class="book-brand">onedayez<span style="color: var(--color-fg);">.</span></span>
+              <span class="book-page-num" id="slide-number">PAGE 1 / 4</span>
+            </div>
+
+            <!-- Book Slide Content -->
+            <div class="book-content-area" id="slide-content">
+              <!-- Content injected dynamically -->
+            </div>
+
+            <!-- Book Slide Footer -->
+            <div class="book-footer">
+              <span class="book-author">@onedayezz</span>
+              <span style="font-weight: 800; font-size: 0.9rem; text-transform: uppercase;">MASTERED BLUEPRINT ⚡</span>
+            </div>
+
+          </div>
+
+          <!-- Interactive Slide Controls -->
+          <div class="book-controls">
+            <a href="list.html" id="back-to-list-btn" class="book-btn">➔ KEMBALI KE LIST</a>
+            <div style="display: flex; gap: 0.75rem;">
+              <button id="prev-btn" class="book-btn">◀ PREV</button>
+              <button id="next-btn" class="book-btn">NEXT ▶</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Brutalist Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid flex-between">
+        <div>
+          <span class="footer-logo">onedayez.</span>
+          <p class="footer-tagline">Brutally premium templates and custom blueprints for modern developers.</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">Tentang ODZ</a>
+          <a href="index.html#about">Filosofi</a>
+          <a href="index.html#services">Layanan</a>
+          <a href="https://github.com/onedayezz" target="_blank" rel="noopener noreferrer">GitHub Org</a>
+          <a href="https://instagram.com/onedayezz" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 onedayez. Crafted with pure focus & no cap. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide Engine Script -->
+  <script>
+    // Slide content database
+    const slideDb = {
+      program: {
+        affiliate: {
+          category: "PROGRAM KEMITRAAN",
+          mainTitle: "AFFILIATE PROGRAM",
+          slides: [
+            {
+              title: "ODZ CO-GROWTH: AFFILIATE PROGRAM 🤝",
+              subtitle: "Skema kemitraan berbayar premium untuk tech geeks, creators, dan partners. Dapatkan komisi tebal 30% dari setiap deal project rujukanmu secara tunai!",
+              bullets: []
+            },
+            {
+              title: "BAGAIMANA CARA KERJANYA? 💸",
+              subtitle: "",
+              bullets: [
+                "1. Komisi Partner 30%: Kamu berhak mengantongi komisi tunai sebesar 30% dari total nilai deal akhir proyek custom rujukanmu.",
+                "2. Diskon Client 20%: Rekan atau klien rujukanmu otomatis mendapatkan potongan harga langsung sebesar 20% dari total nilai deal proyek.",
+                "3. Penentu Komisi: Kesepakatan harga deal akhir (deal price) proyek rujukan yang menentukan nilai nominal pasti komisi dan diskon.",
+                "4. Win-Win Premium: Klien senang dapat diskon besar, kamu dapat komisi pasif melimpah, dan tim ODZ menggarap proyek berstandar elit!"
+              ]
+            },
+            {
+              title: "SIMULASI HARGA DEAL & KOMISI 💰",
+              subtitle: "",
+              bullets: [
+                "Contoh Kasus: Rujukanmu memesan custom web blueprint dengan nominal harga deal akhir Rp 10.000.000.",
+                "Diskon Klien (20%): Klien hemat Rp 2.000.000, sehingga hanya membayar Rp 8.000.000 untuk arsitektur premium.",
+                "Komisi Partner (30%): Kamu berhak menerima Rp 3.000.000 tunai bersih langsung dikirim ke rekeningmu!",
+                "Skema ini berlaku kelipatan penuh tanpa batas maksimal limit nominal kesepakatan proyek. Semakin besar deal, semakin gila komisimu!"
+              ]
+            },
+            {
+              title: "SIAP MULAI KOLABORASI? ⚡",
+              subtitle: "",
+              bullets: [
+                "Langkah 1: Hubungi admin kami langsung via DM Instagram di @onedayezz.",
+                "Langkah 2: Ajukan registrasi kemitraan dan tentukan kode unik affiliate pilihanmu (contoh: KODEKAMU30).",
+                "Langkah 3: Bagikan kode unikmu ke rekan developer, tech enthusiast, atau kenalan pebisnis yang butuh custom software blueprint.",
+                "Langkah 4: Cairkan komisi 30% milikmu begitu proyek deal disepakati dan pembayaran termin pertama masuk!"
+              ]
+            }
+          ]
+        }
+      },
+      announce: {
+        launch: {
+          category: "PENGUMUMAN RESMI",
+          mainTitle: "ODZ LAUNCH HARI INI",
+          slides: [
+            {
+              title: "GRAND LAUNCHING ODZ STUDIO 🚀",
+              subtitle: "Hari ini platform static portfolio dan inkubator blueprint onedayez resmi mengudara secara publik! Kami siap melayani perakitan custom micro-websites premium dan code education.",
+              bullets: []
+            },
+            {
+              title: "APA SEBENARNYA ODZ ITU? 🛠️",
+              subtitle: "",
+              bullets: [
+                "Inkubator Web Blueprint: Kami merancang kode web murni dari nol dengan standard kebersihan dan kerapian berkelas tinggi.",
+                "Ditujukan bagi Tech Geeks: Kami menyasar para developer, pembelajar mandiri, dan owner visioner yang mau memegang aset digital murni.",
+                "Anti-Template Instan: Kami tidak melayani joki murahan atau template instan kaku. Setiap baris code adalah karya seni terstruktur.",
+                "Serah Terima 100%: Seluruh source code mentah dan blueprint struktur diserahkan penuh agar bisa dipelajari atau dikembangkan kembali."
+              ]
+            },
+            {
+              title: "LAUNCHING SPECIAL: AFFILIATE IS LIVE 🤝",
+              subtitle: "",
+              bullets: [
+                "Membuka Pendaftaran Mitra: Menyambut peluncuran akbar ini, kami resmi membuka pendaftaran Program Affiliate Kemitraan secara publik!",
+                "Komisi 30% Tunai: Kamu bisa merekomendasikan klien potensial kepada kami dan mengantongi 30% komisi bersih dari harga deal proyek.",
+                "Diskon Klien 20%: Klien rujukanmu otomatis mendapatkan potongan 20% penuh menggunakan kode unik kemitraan milikmu.",
+                "Daftar Sekarang: Langsung DM kami di Instagram @onedayezz untuk mengklaim kode affiliate unik kustom pilihanmu hari ini!"
+              ]
+            }
+          ]
+        }
+      },
+      insight: {
+        "1": {
+          category: "INSIGHT 1/10",
+          mainTitle: "PURE CODE VS FRAMEWORKS",
+          slides: [
+            {
+              title: "PURE CODE VS HEAVY FRAMEWORKS 🦾",
+              subtitle: "Mengapa menguasai HTML/CSS murni membuatmu jauh lebih unggul di era web yang lambat dan penuh dengan bloatware modern.",
+              bullets: []
+            },
+            {
+              title: "PERMASALAHAN BLOATWARE 📦",
+              subtitle: "",
+              bullets: [
+                "Framework modern sering memuat ribuan dependency tak terpakai.",
+                "Membuat beban muat halaman membengkak dari kilobyte menjadi megabyte.",
+                "Menurunkan kecepatan rendering awal di browser seluler yang lambat.",
+                "Meningkatkan kompleksitas debugging untuk project skala kecil-menengah."
+              ]
+            },
+            {
+              title: "KEUNGGULAN PURE CUSTOM CODE ⚡",
+              subtitle: "",
+              bullets: [
+                "Ukuran Minimalis: File bersih murni hanya berukuran beberapa kilobyte saja.",
+                "Load Super Kilat: Browser merender element secara instan tanpa parsing library.",
+                "Optimalisasi SEO: Struktur DOM bersih memudahkan Google mengindeks halaman.",
+                "Kendali Penuh: Kamu memahami setiap baris kode yang tertulis tanpa black box."
+              ]
+            },
+            {
+              title: "KESIMPULAN: PILIH BIJAKSANA 🎯",
+              subtitle: "",
+              bullets: [
+                "Framework bagus untuk aplikasi skala raksasa tingkat enterprise.",
+                "Namun untuk landing page, portofolio, dan micro-sites, pure code menang mutlak.",
+                "Kuasai dasar HTML/CSS/JS murni agar kamu memiliki skill fundamental tingkat dewa!",
+                "Di ODZ, kami merayakan performa murni untuk setiap blueprints yang kami bangun."
+              ]
+            }
+          ]
+        },
+        "2": {
+          category: "INSIGHT 2/10",
+          mainTitle: "BRUTALIST DESIGN CORE",
+          slides: [
+            {
+              title: "BRUTALIST WEB DESIGN CORE 🎨",
+              subtitle: "Mendobrak kejenuhan layout minimalis korporat yang membosankan lewat estetika berani, jujur, dan berkarakter kuat.",
+              bullets: []
+            },
+            {
+              title: "CIRI KHAS ESTETIKA BRUTALISME ⚔️",
+              subtitle: "",
+              bullets: [
+                "Solid Borders: Menggunakan garis pembatas hitam tebal (3px ke atas).",
+                "Flat Offset Shadows: Bayangan kotak padat tanpa efek blur yang tegas.",
+                "High Contrast Badges: Penggunaan label bertolak belakang warna untuk penekanan.",
+                "Asymmetrical Grids: Layout modular yang dinamis dan terkesan 'mentah'."
+              ]
+            },
+            {
+              title: "KENDALI TYPOGRAPHY & WARNA 💥",
+              subtitle: "",
+              bullets: [
+                "Font Geometris: Memakai font modern berbobot ekstra tebal seperti Outfit.",
+                "Harmoni Monokrom: Kombinasi kontras tinggi hitam/putih dengan satu warna aksen.",
+                "Legibilitas Tinggi: Menolak manipulasi font yang mengorbankan keterbacaan teks.",
+                "Tampilan Terpercaya: Memberikan kesan berani, jujur, dan anti-mainstream."
+              ]
+            }
+          ]
+        },
+        "3": {
+          category: "INSIGHT 3/10",
+          mainTitle: "SEO & SEMANTIC HTML MARKUP",
+          slides: [
+            {
+              title: "SEO & SEMANTIC HTML MARKUP 🔍",
+              subtitle: "Mengapa menulis kerangka kode HTML yang semantik bisa membuat robot pencari Google jatuh cinta pada website buatanmu secara instan.",
+              bullets: []
+            },
+            {
+              title: "BAHAYA 'DIV SOUP' 🍲",
+              subtitle: "",
+              bullets: [
+                "Banyak developer menyusun layout hanya bermodalkan tag <div> bertingkat.",
+                "Menyebabkan struktur DOM menjadi tidak terbaca oleh screen reader.",
+                "Menyulitkan mesin pencari memahami struktur informasi halaman.",
+                "Meningkatkan resiko kesalahan penutupan tag pembuka kode."
+              ]
+            },
+            {
+              title: "BERALIH KE KODE SEMANTIK 🌟",
+              subtitle: "",
+              bullets: [
+                "Gunakan <header> dan <footer> untuk batas atas dan bawah halaman.",
+                "Bungkus isi konten utama dengan tag <main>.",
+                "Bagi wilayah informasi menggunakan <section>.",
+                "Terapkan <article> untuk konten tulisan mandiri atau item grid.",
+                "Gunakan <aside> untuk informasi pelengkap atau sidebar halaman."
+              ]
+            }
+          ]
+        },
+        "4": {
+          category: "INSIGHT 4/10",
+          mainTitle: "VISUAL ASSETS OPTIMIZATION",
+          slides: [
+            {
+              title: "VISUAL ASSETS OPTIMIZATION 📸",
+              subtitle: "Rahasia mengoptimalkan media visual website agar loading secepat kilat tanpa mengorbankan keindahan gambar di layar resolusi tinggi.",
+              bullets: []
+            },
+            {
+              title: "OPTIMASI GAMBAR MODERN ⚡",
+              subtitle: "",
+              bullets: [
+                "Konversi ke WebP/AVIF: Memangkas ukuran file gambar hingga 70% dari format PNG.",
+                "Responsive Images: Menggunakan attribute srcset untuk menyajikan gambar sesuai layar.",
+                "Lazy Loading: Menerapkan loading='lazy' agar gambar hanya dimuat saat di-scroll.",
+                "Explicit Dimensions: Selalu menulis width & height untuk mencegah layout shift."
+              ]
+            },
+            {
+              title: "PRIORITASKAN VEKTOR SVG 📐",
+              subtitle: "",
+              bullets: [
+                "Kualitas Infinity: Gambar vektor SVG tetap tajam meski di-zoom 1000% di layar Retina.",
+                "Ukuran Super Irit: SVG ditulis dalam markup teks xml yang sangat ringan.",
+                "Interaktivitas CSS: Element SVG bisa dimanipulasi warnanya langsung via CSS.",
+                "ODZ Standard: Semua ilustrasi ikon di blueprints kami berbasis SVG murni!"
+              ]
+            }
+          ]
+        },
+        "5": {
+          category: "INSIGHT 5/10",
+          mainTitle: "MICRO-INTERACTIONS WITH CSS",
+          slides: [
+            {
+              title: "MICRO-INTERACTIONS WITH CSS ✨",
+              subtitle: "Cara menghidupkan elemen website agar terasa tactile, reaktif, dan memuaskan saat disentuh menggunakan pure vanilla CSS transition.",
+              bullets: []
+            },
+            {
+              title: "MENGAPA INTERAKSI PENTING? 🧠",
+              subtitle: "",
+              bullets: [
+                "Memberikan umpan balik instan bahwa suatu element bisa diklik.",
+                "Meningkatkan waktu rata-rata kunjungan (engagement) pengguna di website.",
+                "Menciptakan kesan profesional dan premium pada UI website.",
+                "Memandu alur pandang mata pengunjung menuju target konversi."
+              ]
+            },
+            {
+              title: "TRIK CSS TRANSITION PREMIUM 🪄",
+              subtitle: "",
+              bullets: [
+                "Gunakan cubic-bezier timing function untuk efek pantulan elastis.",
+                "Terapkan transform: translate(-3px, -3px) saat tombol di-hover.",
+                "Kombinasikan dengan offset shadow yang memanjang searah gerakan.",
+                "Hindari animasi berlebihan yang mengganggu kenyamanan bernavigasi."
+              ]
+            }
+          ]
+        },
+        "6": {
+          category: "INSIGHT 6/10",
+          mainTitle: "CLEAN CODE ARCHITECTURE",
+          slides: [
+            {
+              title: "CLEAN CODE ARCHITECTURE 📂",
+              subtitle: "Kunci rahasia menyusun arsitektur berkas kode agar tetap bersih, teratur, dan mudah dipahami meski digarap oleh banyak developer.",
+              bullets: []
+            },
+            {
+              title: "STRUKTUR MODULAR YANG IDEAL 🏗️",
+              subtitle: "",
+              bullets: [
+                "Pisahkan logika JS, struktur HTML, dan styling CSS ke file terpisah.",
+                "Bagi file CSS ke dalam segmentasi tokens, layout, components, dan responsive.",
+                "Gunakan penamaan class CSS yang deskriptif dan konsisten (standard BEM).",
+                "Kelompokkan semua file aset visual gambar ke dalam subfolder khusus /assets."
+              ]
+            },
+            {
+              title: "PENTINGNYA KODE YANG TERSTRUKTUR 🌟",
+              subtitle: "",
+              bullets: [
+                "Mempermudah proses debugging ketika terjadi kendala teknis.",
+                "Mempercepat adaptasi developer baru yang ikut bergabung dalam tim.",
+                "Memungkinkan penggunaan kembali (reusability) component di halaman lain.",
+                "Standard ODZ: Bersih bagai karya seni, siap didelegasikan kapan saja!"
+              ]
+            }
+          ]
+        },
+        "7": {
+          category: "INSIGHT 7/10",
+          mainTitle: "CUSTOM CODE VS NO-CODE",
+          slides: [
+            {
+              title: "CUSTOM PURE-CODE VS NO-CODE 🚀",
+              subtitle: "Membongkar perbandingan komprehensif mengapa coding murni dari nol selalu memenangkan kendali dan skalabilitas jangka panjang untuk bisnismu.",
+              bullets: []
+            },
+            {
+              title: "KETERBATASAN PLATFORM NO-CODE 🔒",
+              subtitle: "",
+              bullets: [
+                "Sering terkunci oleh biaya langganan bulanan platform yang mahal.",
+                "Sulit melakukan kustomisasi logika bisnis yang unik dan rumit.",
+                "Performa website seringkali lambat karena script bawaan platform yang padat.",
+                "Source code seutuhnya milik platform, bukan milik bisnismu sendiri."
+              ]
+            },
+            {
+              title: "SUPERIORITAS CUSTOM PURE-CODE 🦾",
+              subtitle: "",
+              bullets: [
+                "Kepemilikan Penuh: Aset digital seutuhnya milikmu tanpa ikatan vendor.",
+                "Skalabilitas Tanpa Batas: Bebas mengintegrasikan API pihak ketiga mana pun.",
+                "Biaya Operasional Rendah: Bisa di-host gratis di platform static seperti GitHub.",
+                "Standard ODZ: Kebebasan mutlak bagi kreator modern untuk bertumbuh!"
+              ]
+            }
+          ]
+        },
+        "8": {
+          category: "INSIGHT 8/10",
+          mainTitle: "SLEEK RESPONSIVE LAYOUTS",
+          slides: [
+            {
+              title: "SLEEK RESPONSIVE LAYOUTS 📱",
+              subtitle: "Kiat jitu mengamankan layout website agar tetap rapi, presisi, dan tidak hancur di layar handphone berukuran paling kecil sekalipun.",
+              bullets: []
+            },
+            {
+              title: "TEKNIK FLUID LAYOUT MODERN 📐",
+              subtitle: "",
+              bullets: [
+                "Gunakan CSS Grid & Flexbox untuk susunan grid yang fleksibel.",
+                "Gunakan unit relatif (rem, em, %) ketimbang ukuran absolut pixel (px).",
+                "Terapkan CSS clamp() untuk ukuran typography yang membesar otomatis.",
+                "Gunakan flex-wrap agar item otomatis berbaris ke bawah di layar sempit."
+              ]
+            },
+            {
+              title: "PENGUJIAN RESPONSIVITAS YANG KETAT 🔍",
+              subtitle: "",
+              bullets: [
+                "Selalu uji tampilan di resolusi terkecil smartphone (320px).",
+                "Pastikan tidak terjadi horizontal scrolling (kebocoran container layout).",
+                "Beri padding sentuh yang cukup besar untuk jempol pengguna mobile.",
+                "ODZ Rule: Teks rata kanan-kiri (justified) di mobile untuk kerapian maksimal!"
+              ]
+            }
+          ]
+        },
+        "9": {
+          category: "INSIGHT 9/10",
+          mainTitle: "CSS CUSTOM TOKENS SYSTEM",
+          slides: [
+            {
+              title: "CSS CUSTOM TOKENS SYSTEM 🎨",
+              subtitle: "Bagaimana menyusun color tokens, spacing, dan variables terpusat di CSS agar bisa mengubah tema seluruh web dalam satu baris kode.",
+              bullets: []
+            },
+            {
+              title: "PEMANFAATAN CSS VARIABLES 📂",
+              subtitle: "",
+              bullets: [
+                "Definisikan semua warna primer di root selector (:root).",
+                "Buat variabel terpusat untuk ketebalan border (contoh: --border-thick: 3px solid).",
+                "Atur tokens transition timing untuk konsistensi seluruh mikro-animasi.",
+                "Gunakan penamaan variabel yang logis dan konsisten (standard design system)."
+              ]
+            },
+            {
+              title: "KEMUDAHAN MAINTENANCE GLOBAL 🛠️",
+              subtitle: "",
+              bullets: [
+                "Mempermudah migrasi ke fitur dark mode/light mode secara instan.",
+                "Menghemat ribuan baris kode duplikat yang tidak perlu ditulis ulang.",
+                "Mempercepat revisi warna aksen sesuai dengan kemauan brand.",
+                "Membantu developer lain memahami palet warna resmi websitemu."
+              ]
+            }
+          ]
+        },
+        "10": {
+          category: "INSIGHT 10/10",
+          mainTitle: "GITHUB WORKFLOW FOR CREATORS",
+          slides: [
+            {
+              title: "GITHUB WORKFLOW FOR CREATORS ⚙️",
+              subtitle: "Panduan praktis bagi solo developer dan content creators untuk mengamankan aset digital berhargamu menggunakan alur kerja GitHub teratur.",
+              bullets: []
+            },
+            {
+              title: "PENTINGNYA ATOMIC COMMIT ⚛️",
+              subtitle: "",
+              bullets: [
+                "Commit adalah riwayat simpanan terkecil perubahan kodemu.",
+                "Lakukan commit setelah menyelesaikan satu blok logika (atomic unit).",
+                "Tulis deskripsi commit yang jelas dan spesifik dalam bahasa Inggris.",
+                "Pisahkan pekerjaan eksperimen di branch devv sebelum dilempar ke main."
+              ]
+            },
+            {
+              title: "MANFAAT VERSION CONTROL SYSTEM 🌟",
+              subtitle: "",
+              bullets: [
+                "Menghindarkan resiko kehilangan file kode akibat kerusakan hardware.",
+                "Bisa memutar kembali waktu (rollback) ke versi kode yang stabil jika crash.",
+                "Memudahkan kolaborasi jarak jauh bersama tim developers lain.",
+                "Menampilkan kredibilitas dan transparansi keahlianmu ke calon klien."
+              ]
+            }
+          ]
+        }
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Parse URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const type = urlParams.get('type');
+      const id = urlParams.get('id');
+
+      // Check validation
+      if (!type || !id || !slideDb[type] || !slideDb[type][id]) {
+        // Redirect if invalid
+        window.location.href = "list.html";
+        return;
+      }
+
+      const activeRecord = slideDb[type][id];
+      const slides = activeRecord.slides;
+      let currentSlideIdx = 0;
+
+      // Update meta titles
+      document.getElementById('detail-category-badge').textContent = activeRecord.category;
+      document.getElementById('detail-main-title').textContent = activeRecord.mainTitle;
+      document.getElementById('back-to-list-btn').href = `list.html?tab=${type}`;
+
+      // Dom nodes
+      const slideNumEl = document.getElementById('slide-number');
+      const slideContentEl = document.getElementById('slide-content');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+
+      // Render slide function
+      function renderSlide() {
+        const slide = slides[currentSlideIdx];
+        slideNumEl.textContent = `PAGE ${currentSlideIdx + 1} / ${slides.length}`;
+
+        // Build HTML
+        let html = `<h2 class="book-title">${slide.title}</h2>`;
+        
+        if (slide.subtitle) {
+          html += `<p class="book-subtitle">${slide.subtitle}</p>`;
+        }
+
+        if (slide.bullets && slide.bullets.length > 0) {
+          html += `<ul class="book-bullets">`;
+          slide.bullets.forEach(bullet => {
+            html += `<li class="book-bullet-item">${bullet}</li>`;
+          });
+          html += `</ul>`;
+        }
+
+        slideContentEl.innerHTML = html;
+
+        // Button disabled states
+        prevBtn.disabled = (currentSlideIdx === 0);
+        nextBtn.disabled = (currentSlideIdx === slides.length - 1);
+      }
+
+      // Event listeners
+      prevBtn.addEventListener('click', () => {
+        if (currentSlideIdx > 0) {
+          currentSlideIdx--;
+          renderSlide();
+        }
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (currentSlideIdx < slides.length - 1) {
+          currentSlideIdx++;
+          renderSlide();
+        }
+      });
+
+      // Initial render
+      renderSlide();
+    });
+  </script>
+</body>
+</html>
