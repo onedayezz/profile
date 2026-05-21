@@ -279,12 +279,18 @@
               ]
             },
             {
-              title: "BERALIH KE KODE SEMANTIK 🌟",
+              title: "BERALIH KE KODE SEMANTIK (PART 1) 🌟",
               subtitle: "",
               bullets: [
                 "Gunakan <header> dan <footer> untuk batas atas dan bawah halaman.",
                 "Bungkus isi konten utama dengan tag <main>.",
-                "Bagi wilayah informasi menggunakan <section>.",
+                "Bagi wilayah informasi menggunakan <section>."
+              ]
+            },
+            {
+              title: "BERALIH KE KODE SEMANTIK (PART 2) 🌟",
+              subtitle: "",
+              bullets: [
                 "Terapkan <article> untuk konten tulisan mandiri atau item grid.",
                 "Gunakan <aside> untuk informasi pelengkap atau sidebar halaman."
               ]
@@ -583,16 +589,20 @@
             </div>
           `;
         } else {
-          html = `<h2 class="book-title">${slide.title}</h2>`;
+          // Escape raw HTML brackets to display tag names properly
+          const escapedTitle = slide.title.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          html = `<h2 class="book-title">${escapedTitle}</h2>`;
           
           if (slide.subtitle) {
-            html += `<p class="book-subtitle">${slide.subtitle}</p>`;
+            const escapedSubtitle = slide.subtitle.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            html += `<p class="book-subtitle">${escapedSubtitle}</p>`;
           }
 
           if (slide.bullets && slide.bullets.length > 0) {
             html += `<ul class="book-bullets">`;
             slide.bullets.forEach(bullet => {
-              html += `<li class="book-bullet-item">${bullet}</li>`;
+              const escapedBullet = bullet.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+              html += `<li class="book-bullet-item">${escapedBullet}</li>`;
             });
             html += `</ul>`;
           }
