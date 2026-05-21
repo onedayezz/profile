@@ -685,6 +685,121 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
 }
 
+/* About Page & Pure HTML/CSS Logo */
+.about-hero {
+  padding: 6rem 0 4rem 0;
+  text-align: center;
+  background: var(--color-white);
+  border-bottom: var(--border-thick);
+}
+
+.about-logo-wrapper {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.odz-brutalist-logo {
+  display: inline-flex;
+  gap: 0.75rem;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.logo-box {
+  width: 90px;
+  height: 90px;
+  border: var(--border-thick);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  box-shadow: 8px 8px 0px var(--color-fg);
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+  user-select: none;
+}
+
+.box-o {
+  background: var(--color-white);
+  color: var(--color-fg);
+  transform: rotate(-4deg);
+}
+
+.box-d {
+  background: var(--color-fg);
+  color: var(--color-white);
+  transform: rotate(3deg);
+}
+
+.box-z {
+  background: var(--color-white);
+  color: var(--color-fg);
+  transform: rotate(-2deg);
+}
+
+.box-dot {
+  background: var(--color-fg);
+  color: var(--color-white);
+  width: 35px;
+  height: 90px;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 12px;
+  transform: rotate(5deg);
+}
+
+.odz-brutalist-logo:hover .logo-box {
+  transform: translate(-5px, -5px) scale(1.05);
+  box-shadow: 12px 12px 0px var(--color-fg);
+}
+
+.odz-brutalist-logo:hover .box-o {
+  background: var(--color-fg);
+  color: var(--color-white);
+  transform: translate(-7px, -7px) rotate(6deg);
+}
+
+.odz-brutalist-logo:hover .box-d {
+  background: var(--color-white);
+  color: var(--color-fg);
+  transform: translate(-5px, -5px) rotate(-8deg);
+}
+
+.odz-brutalist-logo:hover .box-z {
+  background: var(--color-fg);
+  color: var(--color-white);
+  transform: translate(-9px, -9px) rotate(5deg);
+}
+
+.odz-brutalist-logo:hover .box-dot {
+  background: var(--color-white);
+  color: var(--color-fg);
+  transform: translate(-3px, -3px) rotate(-12deg);
+}
+
+/* About Content Sections */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.about-card {
+  height: 100%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Mobile Responsiveness & Text Justification */
 @media (max-width: 768px) {
   body, p, h1, h2, h3, h4, h5, h6, 
@@ -721,5 +836,24 @@ h1, h2, h3, h4, h5, h6 {
   
   .insta-box {
     padding: 2.5rem 1.25rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .logo-box {
+    width: 65px;
+    height: 65px;
+    font-size: 2.5rem;
+    box-shadow: 5px 5px 0px var(--color-fg);
+  }
+  
+  .box-dot {
+    width: 25px;
+    height: 65px;
+    font-size: 2.5rem;
+    padding-bottom: 8px;
   }
 }
