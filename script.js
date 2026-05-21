@@ -6,7 +6,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initFormInteractivity();
-  initThemeToggle();
 });
 
 /**
@@ -53,26 +52,5 @@ function initFormInteractivity() {
       input.style.transform = '';
       input.style.boxShadow = '';
     });
-  });
-}
-
-/**
- * Initializes and manages site-wide premium Brutalist Dark Mode toggle.
- */
-function initThemeToggle() {
-  const toggleBtn = document.getElementById('theme-toggle');
-  if (!toggleBtn) return;
-  
-  // Set current icon based on active data-theme
-  const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-  toggleBtn.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
-  
-  toggleBtn.addEventListener('click', () => {
-    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    const newTheme = isDark ? 'light' : 'dark';
-    
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    toggleBtn.textContent = newTheme === 'dark' ? '☀️' : '🌙';
   });
 }

@@ -8,26 +8,16 @@
   --color-gray-dark: #333333;
   --color-accent: #ffffff;
   
-  --border-thick: 3px solid var(--color-fg);
-  --border-thin: 1.5px solid var(--color-fg);
+  --border-thick: 3px solid #000000;
+  --border-thin: 1.5px solid #000000;
   
-  --shadow-flat: 4px 4px 0px var(--color-fg);
-  --shadow-flat-hover: 7px 7px 0px var(--color-fg);
-  --shadow-flat-active: 1px 1px 0px var(--color-fg);
+  --shadow-flat: 4px 4px 0px #000000;
+  --shadow-flat-hover: 7px 7px 0px #000000;
+  --shadow-flat-active: 1px 1px 0px #000000;
   
   --transition-fast: 0.15s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
-[data-theme="dark"] {
-  --color-bg: #121212;          /* Slate charcoal deep background */
-  --color-fg: #ffffff;          /* Bold white for text and borders */
-  --color-white: #1e1e1e;       /* Slate dark grey for card backgrounds */
-  --color-gray-light: #2d2d2d;  /* Muted separators/inputs */
-  --color-gray-dark: #aaaaaa;   /* Muted text and secondary typography */
-  --color-accent: #1e1e1e;
-}
-
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -41,7 +31,6 @@ body {
   color: var(--color-fg);
   line-height: 1.5;
   overflow-x: hidden;
-  transition: background-color var(--transition-normal), color var(--transition-normal), border-color var(--transition-normal);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -110,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   border: var(--border-thick);
   box-shadow: var(--shadow-flat);
   padding: 2.5rem;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-normal), border-color var(--transition-normal);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
   position: relative;
 }
 
@@ -135,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-normal), color var(--transition-normal), border-color var(--transition-normal);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .neo-btn:hover {
@@ -155,17 +144,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .neo-btn-dark:hover {
   background: #222;
-  color: var(--color-white);
-}
-
-[data-theme="dark"] .neo-btn-dark:hover {
-  background: #e0e0e0;
-  color: #121212;
-}
-
-[data-theme="dark"] .neo-btn-dark:active {
-  background: #ffffff;
-  color: #121212;
 }
 
 /* Badges */
