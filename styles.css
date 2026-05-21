@@ -593,7 +593,104 @@ h1, h2, h3, h4, h5, h6 {
 
 .copyright {
   color: #888;
-  font-size: 0.85rem;
+}
+
+/* Army Section styling */
+.army-section {
+  background: var(--color-white);
+  border-bottom: var(--border-thick);
+}
+
+.army-header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.army-title {
+  font-size: 2.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.army-subtitle {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  color: var(--color-gray-dark);
+}
+
+.army-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+@media (max-width: 992px) {
+  .army-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .army-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.army-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.army-img-wrapper {
+  border: var(--border-thick);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background: var(--color-bg);
+  aspect-ratio: 1;
+}
+
+.army-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter var(--transition-normal), transform var(--transition-normal);
+}
+
+.army-card:hover .army-avatar {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.army-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.army-codename {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.army-role {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.army-bio {
+  font-size: 0.95rem;
+  color: var(--color-gray-dark);
+  line-height: 1.5;
 }
 
 /* Mobile Responsiveness & Text Justification */
