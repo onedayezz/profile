@@ -525,7 +525,17 @@
       }
 
       const activeRecord = slideDb[type][id];
-      const slides = activeRecord.slides;
+      // Clone slides and append the universal dynamic CTA closing slide for Instagram carousel format
+      const slides = [...activeRecord.slides, {
+        title: "TERTARIK DENGAN BLUEPRINT KITA? ⚡",
+        subtitle: "Estetika brutalist, performa murni tanpa bloatware, dan arsitektur premium serah terima 100% milikmu.",
+        bullets: [
+          "📩 Hubungi Kami: Punya ide proyek, landing page, atau butuh custom software blueprints?",
+          "🔥 Direct Message: Kirim pesan sekarang juga via DM Instagram di @onedayez!",
+          "🤝 Join Mitra Affiliate: Dapatkan komisi tebal 30% tunai dari harga deal proyek dengan merekomendasikan klien!",
+          "⚡ No Cap, Pure Code: Mari kita rakit masterpiece web impianmu bareng onedayez!"
+        ]
+      }];
       let currentSlideIdx = 0;
 
       // Update meta titles
